@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* 여백초기화 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+}
+/* a링크 초기화 */
+a:hover{
+    color:#000;
+}
+
+/*폰트초기화*/
+html{
+    font-size: 62.5%; /*16px의 62.5%=10px // 1rem->10px */
+    overflow-x: hidden;
+    overflow-y: scroll;/*가시적인 부분에서 불편함을 해소하기위해 스크롤은 만들어둔다.*/
+}
+
+
+body, input, textarea, select, button, table{
+    font-family: 'Noto Sans KR', Roboto, AppleSDGothicNeo, sans-serif;
+    color:#222;
+    line-height: 1.75;
+}
+em, address{
+    font-style: normal;
+}
+/*불릿기호 초기화*/
+dl,ul,li,ol,menu{
+    list-style: none;
+}
+/*제목태그 초기화*/
+h1,h2,h3,h4,h5,h6{
+    font-size: 1.3rem;
+    color: #222;
+    font-weight: normal;
+}
+/*테두리 초기화*/
+img,fieldset{
+    border:0 none;
+}
+/*버튼 초기화*/
+button{
+    border:0;
+}
+/*float*/
+.fl{float: left;}
+.fr{float: right;}
+
+/*clearfix*/
+.cb{
+    clear:both;
+}
+.cf::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+/*margin, padding*/
+.mb10{margin-bottom: 10px !important;}
+.mb20{margin-bottom: 20px !important;}
+.mb30{margin-bottom: 30px !important;}
+.mb40{margin-bottom: 40px !important;}
+.mb50{margin-bottom: 50px !important;}
+.mb100{margin-bottom: 100px !important;}
