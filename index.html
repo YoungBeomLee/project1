@@ -1,166 +1,233 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!--익스호환성-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 반응형 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="한국가스공사 홈페이지입니다." />
+    <!--검색했을때 하단에 나오는 문구-->
+    <meta name="robot" content="follow" />
+    <!--함부로 링크가져다 쓰지못하게함-->
+    <meta name="author" content="이영범" />
+    <meta name="keyword" content="프론트엔드,포트폴리오,가스" />
+    <meta property="og:title" content="한국가스공사,영범s 포폴" />
+    <meta property="og:url" content="http://krkr127127.dothome.co.kr/KOGAS_Project1/index.html" />
+    <meta property="og:image" content="images/og_img.png" />
 
-<head>
-  <meta charset="UTF-8" />
-  <!--익스호환성-->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- 반응형 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="한국가스공사 홈페이지입니다." />
-  <!--검색했을때 하단에 나오는 문구-->
-  <meta name="robot" content="follow" />
-  <!--함부로 링크가져다 쓰지못하게함-->
-  <meta name="author" content="이영범" />
-  <meta name="keyword" content="프론트엔드,포트폴리오,가스" />
-  <meta property="og:title" content="한국가스공사,영범s 포폴" />
-  <meta property="og:url" content="http://krkr127127.dothome.co.kr/KOGAS_Project1/index.html" />
-  <meta property="og:image" content="images/og_img.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>KOGAS</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/kogas.css" />
+  </head>
 
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
-  <title>KOGAS</title>
-  <link rel="stylesheet" href="css/reset.css"/>
-  <link rel="stylesheet" href="css/kogas.css"/>
-</head>
-
-<body>
-  <div id="wrap">
-    <header>
-      <div class="main_header">
-        <div class="header_cover cf">
-          <div class="header_topbox">
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="main_header">
+          <div class="header_cover cf">
+            <div class="header_topbox">
               <div class="inner">
-              <ul class="mode_ch fl">
-                <li>
-                  <a href="#"><img src="images/sun_default.png" alt="해" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="images/moon_default.png" alt="달" /></a>
-                </li>
-              </ul>
-              <ul class="gnb fr">
-                <li>
-                  <span><a href="#">어린이 KOGAS</a></span>
-                </li>
-                <li><a href="#">KOR</a></li>
-                <li><a href="#">ENG</a></li>
-              </ul>
-            </div>
+                <ul class="mode_ch fl">
+                  <li>
+                    <a href="#"><img src="images/sun_default.png" alt="해" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/moon_default.png" alt="달" /></a>
+                  </li>
+                </ul>
+                <ul class="gnb fr">
+                  <li>
+                    <span><a href="#">어린이 KOGAS</a></span>
+                  </li>
+                  <li><a href="#">KOR</a></li>
+                  <li><a href="#">ENG</a></li>
+                </ul>
+              </div>
             </div>
 
             <div class="header_bottombox">
-              <div class="inner">
-                <div class="img_headlogo"></div>
-                <ul class="nav fl">
-                  
-                    <li><a href="#">KOGAS소개</a></li>
-                    <li><a href="#">함께해요</a></li>
-                    <li><a href="#">청정에너지</a></li>
-                    <li><a href="#">지식IN</a></li>
-                    <li><a href="#">열린경영</a></li>
-                    <li><a href="#">정보공개</a></li>
-                  
-                </ul>
-                <div class="threebar"></div>
+              <div class="gnb_dep2">
+                <div class="inner">
+                  <div class="img_headlogo">
+                    <div class="coo_logo"></div>
+                    <div class="dep2_logo"></div>
+                  </div>
+                  <ul class="nav fl">
+                    <li>
+                      <a href="#">KOGAS소개</a>
+                      <ul class="dep2_1">
+                        <li><a href="#">KOGAS개요</a></li>
+                        <li><a href="#">뉴스룸</a></li>
+                        <li><a href="#">KOGAS사보</a></li>
+                        <li><a href="#">CEO인사말</a></li>
+                        <li><a href="#">공사연혁</a></li>
+                        <li><a href="#">조직안내</a></li>
+                        <li><a href="#">채용정보</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">함께해요</a>
+                      <ul class="dep2_2">
+                        <li>KOGAS홍보자료</li>
+                        <li>천연가스홍보관</li>
+                        <li>온라인민원</li>
+                        <li>고객지원제도</li>
+                        <li>선수단 소개</li>
+                        <li>사회공헌</li>
+                        <li>비정규직 정규직 전환 알림방</li>
+                        <li>스타트업 경진대회(빅스타)</li>
+                        <li>더 좋은 일자리 만들기</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">청정에너지</a>
+                      <ul class="dep2_3">
+                        <li>수소에너지 사업</li>
+                        <li>미래에너지 사업</li>
+                        <li>천연가스사업</li>
+                        <li>해외사업</li>
+                        <li>연구개발</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">지식IN</a>
+                      <ul class="dep2_4">
+                        <li>수소에너지 정보</li>
+                        <li>천연가스정보</li>
+                        <li>천연가스투어</li>
+                        <li>천연가스요금정보</li>
+                        <li>도시가스열량제도</li>
+                        <li>천연가스보고서</li>
+                        <li>통합자료실</li>
+                        <li>용어사전</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">열린경영</a>
+                      <ul class="dep2_5">
+                        <li>경영공시</li>
+                        <li>지속가능경영</li>
+                        <li>저탄소경영</li>
+                        <li>안전환경경영</li>
+                        <li>윤리인권경영</li>
+                        <li>혁신경영</li>
+                        <li>IR정보</li>
+                        <li>동반성장</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">정보공개</a>
+                      <ul class="dep2_6">
+                        <li>KOGAS정보</li>
+                        <li>정보공개제도</li>
+                        <li>공공데이터제공</li>
+                        <li>사전정보공표</li>
+                        <li>사업실명제</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="threebar"></div>
+                </div>
               </div>
             </div>
-          
-        </div>
-        <div class="section1_sitemap">
-          <div class="inner">
-            <div class="slogan"><img src="images/visual_slogan_1.png" alt="슬로건1"></div>
-            <div class="search_box">
-              <input type="search" class="visual_search" name="search" id="search" placeholder="무엇을 도와드릴까요?" />
-              <a href="#"><img src="images/zoom.png" alt="돋보기"/></a>
-            </div>
-            <ul class="search_hash">
-              <li><a href="#">조직도/인원</a></li>
-              <li><a href="#">#용어사전</a></li>
-              <li><a href="#">#규격표준</a></li>
-              <li><a href="#">#기술이전신청</a></li>
-              <li><a href="#">#전동기종합진단</a></li>
-            </ul>
           </div>
-          <div class="quick_bar">
-            <div class="quick_menu">
-              <ul class="quickicon">
-                <li><img src="" alt=""><span>채용안내</span></li>
-                <li><img src="" alt=""><span>천연가스 도매요금</span></li>
-                <li><img src="" alt=""><span>고객지원 제도</span></li>
-                <li><img src="" alt=""><span>출입신청</span></li>
-                <li><img src="" alt=""><span>온라인민원</span></li>
-                <li><img src="" alt=""><span>공지사항</span></li>
+
+          <div class="section1_sitemap">
+            <div class="inner">
+              <div class="slogan"><img src="images/visual_slogan_1.png" alt="슬로건1" /></div>
+              <div class="search_box">
+                <input type="search" class="visual_search" name="search" id="search" placeholder="무엇을 도와드릴까요?" />
+                <a href="#"><img src="images/zoom.png" alt="돋보기" /></a>
+              </div>
+              <ul class="search_hash">
+                <li><a href="#">조직도/인원</a></li>
+                <li><a href="#">#용어사전</a></li>
+                <li><a href="#">#규격표준</a></li>
+                <li><a href="#">#기술이전신청</a></li>
+                <li><a href="#">#전동기종합진단</a></li>
               </ul>
             </div>
-          </div>
-          <div class="notice_rolling">
-            <ul class="notice_slide">
-              <li><a href="#"><img src="" alt=""></a></li>
-              <li><a href="#"></a></li>
-              <li><span></span></li>
-            </ul>
-            <div class="notice_control">
-              <a href="#"><img src="" alt=""></a>
-              <a href="#"><img src="" alt=""></a>
-              <a href="#"><img src="" alt=""></a>
+            <div class="quick_bar">
+              <div class="quick_menu">
+                <ul class="quickicon">
+                  <li><img src="" alt="" /><span>채용안내</span></li>
+                  <li><img src="" alt="" /><span>천연가스 도매요금</span></li>
+                  <li><img src="" alt="" /><span>고객지원 제도</span></li>
+                  <li><img src="" alt="" /><span>출입신청</span></li>
+                  <li><img src="" alt="" /><span>온라인민원</span></li>
+                  <li><img src="" alt="" /><span>공지사항</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="notice_rolling">
+              <ul class="notice_slide">
+                <li>
+                  <a href="#"><img src="" alt="" /></a>
+                </li>
+                <li><a href="#"></a></li>
+                <li><span></span></li>
+              </ul>
+              <div class="notice_control">
+                <a href="#"><img src="" alt="" /></a>
+                <a href="#"><img src="" alt="" /></a>
+                <a href="#"><img src="" alt="" /></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-    </header>
-    <main>
-      <div class="main_wrap">
-
-        <div class="section2_intro">
-          <div class="inner">section_intro</div>
-        </div>
-        <div class="section3_ad">
-          <div class="inner">section_ad</div>
-        </div>
-        <div class="section4_notice">
-          <div class="inner">section_notice</div>
-        </div>
-        <div class="section5_sns">
-          <div class="inner">section_sns</div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div class="footer_wrap">
-        <div class="site_rellink">
-          <div class="inner">site_rellink</div>
-        </div>
-        <div class="coo_info">
-          <div class="coo_info1">
-            <div class="inner">coo_info1</div>
+      </header>
+      <main>
+        <div class="main_wrap">
+          <div class="section2_intro">
+            <div class="inner">section_intro</div>
           </div>
-          <div class="coo_info2">
-            <div class="inner">coo_info2</div>
+          <div class="section3_ad">
+            <div class="inner">section_ad</div>
           </div>
-          <div class="coo_info3">
-            <div class="inner">coo_info3</div>
+          <div class="section4_notice">
+            <div class="inner">section_notice</div>
+          </div>
+          <div class="section5_sns">
+            <div class="inner">section_sns</div>
           </div>
         </div>
-      </div>
-    </footer>
-  </div>
-</body>
-
+      </main>
+      <footer>
+        <div class="footer_wrap">
+          <div class="site_rellink">
+            <div class="inner">site_rellink</div>
+          </div>
+          <div class="coo_info">
+            <div class="coo_info1">
+              <div class="inner">coo_info1</div>
+            </div>
+            <div class="coo_info2">
+              <div class="inner">coo_info2</div>
+            </div>
+            <div class="coo_info3">
+              <div class="inner">coo_info3</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
