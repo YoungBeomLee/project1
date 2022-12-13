@@ -18,7 +18,7 @@ ctrl+j
 2. 브랜치명 변경
 	git branch -M main
 3. 깃 원격 주소 등록
-	git remote add origin https://github.com/qwerewqwerew/super-duper-waddle.git
+	git remote add origin https://github.com/YoungBeomLee/project1
 4. 깃 원격저장소로 코드 올리기
 	git push -u origin main
 
