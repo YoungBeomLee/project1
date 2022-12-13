@@ -13,7 +13,9 @@
 [class*="_cover"] {
     height: inherit;
 }
-
+[class*="dep2_"]{
+    
+}
 
 .inner{
     border-right: 1px solid;
@@ -37,8 +39,8 @@
 
 .header_cover{
     width: 100%;
-    background:rgba(34, 34, 34, 0.5);
-    height: 150px;
+    background:rgba(192, 240, 19, 0.5);
+    height: 550px;
    
     
 }
@@ -48,6 +50,7 @@
     width:100%;
     height:50px;
     border-bottom: 1px solid #000;
+    background:rgba(34, 34, 34, 0.5);
     
 }
 
@@ -110,12 +113,16 @@ ul.gnb li a{
 .header_bottombox{
     width: 100%;
     height: 100px;
+    background:rgba(34, 34, 34, 0.5);
+
     
     
 }
 .header_bottombox .inner{
     clear: left;
     display: flex;
+    height: 500px;
+    
 }
 
 .header_bottombox .img_headlogo{
@@ -144,10 +151,12 @@ ul.gnb li a{
     
 }
 .header_bottombox .nav ul.nav_wrap{
-    font-size: 16px;
+    font-size: 15px;
     line-height: 100px;
     height: inherit;
     width: 100%;
+    background-color: rgb(38, 248, 248,0.5);
+    
     
     
 }
@@ -160,8 +169,8 @@ ul.gnb li a{
 
 .header_bottombox .nav ul.nav_wrap li{
     float: left;
-    margin: 0 25px;
-    width: 11%;
+    margin: 0 10px;
+    width: 14%;
 }
 
 .header_bottombox .nav ul.nav_wrap li a{
@@ -188,7 +197,9 @@ ul.gnb li a{
     border: 2px solid rgb(243, 9, 9);
     height: 500px;
 }
-
+.header_bottombox .gnb_dep2 .inner{
+    background: rgb(219, 130, 130,0.5);
+}
 
 
 .threebar{
