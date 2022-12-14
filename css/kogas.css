@@ -339,7 +339,7 @@ main {
     height: 220px;
     position: absolute;
     left: 300px;
-    top: 300px;
+    top: 200px;
     
 }
 
@@ -348,7 +348,7 @@ main {
     width: 700px;
     height: 100px;
     position: relative;
-    top: 400px;
+    top: 300px;
     border-bottom: 3px solid #fff;
     margin: auto;
 
@@ -392,7 +392,7 @@ main {
 
 .search_hash {
     position: relative;
-    top: 420px;
+    top: 320px;
     display: inline-block;
     margin: auto;
 
@@ -411,6 +411,93 @@ main {
 
 .search_hash li a {
     color: #fff;
+}
+.quick_bar{
+    position:relative;
+    top: -600px;
+    width:1000px ;
+    background: rgb(255, 255, 255,0.5);
+    height: 200px;
+    border: 1px solid;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0 auto;
+}
+
+.quick_bar::before{
+    content: '';
+    background:rgba(0, 97, 174, 0.8) url('/images/quick_slidebutton_after.png') no-repeat ;
+    background-size: 0.75em;
+    background-position: center;
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 30px;
+    display: block;
+}
+.quick_bar .quick_icon_wrap::after{
+    content: '';
+    background:rgba(0, 97, 174, 0.8) url('/images/quick_slidebutton_after.png') no-repeat ;
+    background-size: 0.75em;
+    background-position: center;
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 30px;
+    display: block;
+}
+.quick_icon_wrap{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+.quick_icon{
+    position: relative;
+    display: flex;
+    width: 100%;
+    top: 50px;
+    margin: 0 auto;
+   
+    
+}
+.quick_icon li{
+    width:17% ;
+    height: 60px;
+    overflow: hidden;
+    text-align: center;
+    
+    
+}
+.quick_icon li img{
+    position: relative;
+    
+    
+    
+    
+}
+.quick_span_wrap{
+    width: 80%;
+    margin: 0 auto;
+}
+.quick_bar .quick_span{
+    line-height: 200px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    top: 80px;
+    left: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+   
+}
+.quick_bar .quick_span li{
+    width: 20%;
+    margin: 0 20px;
+}
+.quick_icon li:hover img{
+    position: relative;
+    top:-60px;
+    
+    
+    
 }
 
 .section2_intro {
