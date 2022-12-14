@@ -217,16 +217,18 @@ ul.gnb li a {
     height:0;
     overflow: hidden;
     z-index: 2;
-    transition: height 0.5s;
+    transition: all 1s;
+    
     
     
     
 }
-.header_bottombox:hover .gnb_dep2 {
+.header_bottombox:hover .gnb_dep2{
     
     height: auto;
-    
+    padding-top: 20px;
 }
+
 
 .dep2_wrap {
     width: 1420px;
@@ -275,13 +277,12 @@ ul.gnb li a {
     height: 60px;
     background: rgb(255, 255, 255,0.5) ;
     border-top: 1px solid #666;
-    
-
 }
 .dep2_servicegnb_inner{
     display: flex;
     width: 1420px;
     margin: 0 auto;
+    padding-right: 100px;
 }
 .dep2_servicegnb_inner h4:hover{
     color:#0061AECC;
@@ -291,6 +292,7 @@ ul.gnb li a {
 .dep2_servicegnb_info {
     display: flex;
     margin-left: 30px;
+    
 }
 .dep2_servicegnb_info li{
     padding: 0 30px;
@@ -339,7 +341,7 @@ main {
     height: 220px;
     position: absolute;
     left: 300px;
-    top: 200px;
+    top: 150px;
     
 }
 
@@ -348,7 +350,7 @@ main {
     width: 700px;
     height: 100px;
     position: relative;
-    top: 300px;
+    top: 200px;
     border-bottom: 3px solid #fff;
     margin: auto;
 
@@ -392,7 +394,7 @@ main {
 
 .search_hash {
     position: relative;
-    top: 320px;
+    top: 220px;
     display: inline-block;
     margin: auto;
 
@@ -415,7 +417,7 @@ main {
 /*------------질문코드1---------------*/
 .quick_bar{
     position:relative;
-    top: -650px;
+    top: -750px;
     width:1000px ;
     background: rgb(255, 255, 255,0.5);
     height: 200px;
@@ -426,32 +428,40 @@ main {
 
 .quick_bar::before{
     content: '';
-    background:rgba(0, 97, 174, 0.8) url('/images/quick_slidebutton_after.png') no-repeat ;
-    background-size: 0.75em;
+    background:rgba(0, 97, 174, 0.8);
+    background-image:url('/images/quick_slidebutton_before.png'); 
+    background-size: cover;
     background-position: center;
     border-radius: 20px 0 0 20px;
     height: 100%;
-    width: 35px;
+    width: 45px;
     display: block;
     cursor: pointer;
 }
 .quick_bar::after{
     content: '';
     background:rgba(0, 97, 174, 0.8) url('/images/quick_slidebutton_after.png') no-repeat ;
-    background-size: 0.75em;
+    background-size: cover;
     background-position: center;
     border-radius: 20px 0 0 20px;
     height: 100%;
-    width: 30px;
+    width: 45px;
     display: block;
+    position: absolute;
+    top: 0;
+    left: 956px;
+    transform: rotate(180deg);
+    cursor: pointer;
 }
 .quick_icon_wrap{
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 100px;
     width: 80%;
-    margin: 0 auto;
+    
 }
 .quick_icon{
-    position: relative;
+    position:absolute;
     display: flex;
     width: 100%;
     top: 50px;
@@ -460,46 +470,48 @@ main {
     
 }
 .quick_icon li{
-    width:17% ;
+    width:20% ;
     height: 60px;
     overflow: hidden;
     text-align: center;
     
     
-}
-.quick_icon li img{
-    position: relative;
     
-    
-    
-    
-}
-.quick_span_wrap{
-    width: 80%;
-    margin: 0 auto;
-}
-.quick_bar .quick_span{
-    line-height: 200px;
-    width: 100%;
-    display: flex;
-    margin: 0 auto;
-    top: 80px;
-    left: 25px;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-   
-}
-.quick_bar .quick_span li{
-    width: 20%;
-    margin: 0 20px;
 }
 .quick_icon li:hover img{
     position: relative;
     top:-60px;
     
+}
+.quick_icon li img{
+    position: relative;
+}
+.quick_span_wrap{
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    width: 100%;
+    margin: 0 auto;
+}
+.quick_span_wrap .quick_span{
     
-    
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    position:relative;
+    top: 0px;
+    left: 25px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 50px;
+   
+}
+.quick_bar .quick_span li{
+    width: 20%;
+}
+.quick_icon li,.quick_span li:hover a{
+    color:#0061AECC;
 }
 /*------------질문코드1 여기까지--------------*/
 .section2_intro {
