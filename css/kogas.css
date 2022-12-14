@@ -412,9 +412,10 @@ main {
 .search_hash li a {
     color: #fff;
 }
+/*------------질문코드1---------------*/
 .quick_bar{
     position:relative;
-    top: -600px;
+    top: -650px;
     width:1000px ;
     background: rgb(255, 255, 255,0.5);
     height: 200px;
@@ -430,10 +431,11 @@ main {
     background-position: center;
     border-radius: 20px 0 0 20px;
     height: 100%;
-    width: 30px;
+    width: 35px;
     display: block;
+    cursor: pointer;
 }
-.quick_bar .quick_icon_wrap::after{
+.quick_bar::after{
     content: '';
     background:rgba(0, 97, 174, 0.8) url('/images/quick_slidebutton_after.png') no-repeat ;
     background-size: 0.75em;
@@ -499,7 +501,7 @@ main {
     
     
 }
-
+/*------------질문코드1 여기까지--------------*/
 .section2_intro {
     background: yellow;
     height: 900px;
