@@ -224,10 +224,7 @@ ul.gnb li:nth-child(2) a {
     color: #0061AECC;
 }
 
-.header_bottombox:hover .gnb_dep2 {
-    height: auto;
-    padding-top: 20px;
-}
+
 
 
 .header_bottombox:hover > .nav_wrap li a{
@@ -264,6 +261,10 @@ ul.gnb li:nth-child(2) a {
     transition: all 1s;
 
 }
+.header_bottombox:hover .gnb_dep2 {
+    height: auto;
+    padding-top: 20px;
+}
 
 
 .dep2_wrap {
@@ -294,12 +295,11 @@ ul.gnb li:nth-child(2) a {
 
 .dep2_wrap .dep2_ulwrap ul li {
     padding: 10px 0;
-    line-height: 30px;
-
+    
 }
 
 .dep2_wrap .dep2_ulwrap ul li a {
-    font-weight: 400;
+    font-weight: 300;
     color: #666;
 
 }
