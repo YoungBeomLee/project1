@@ -11,7 +11,7 @@ a{
 }
 /* a링크 초기화 */
 a:hover{
-    color:#000;
+    color: #000;
 }
 
 /*폰트초기화*/
@@ -23,9 +23,9 @@ html{
 
 
 body, input, textarea, select, button, table{
-    font-family: 'Noto Sans KR', Roboto, AppleSDGothicNeo, sans-serif;
-    color:#222;
-    line-height: 1.75;
+    font-family: 'Noto Sans Korean', 'Nanum Gothic', Nanum Gothic, '나눔고딕', '맑은 고딕', 'Malgun Gothic', Dotum, '돋움', Gulim, '굴림', sans-serif;
+    font-size:0.9375rem; line-height:1.1;  font-weight:400; color: #333; letter-spacing: -0.5px; word-break: keep-all; -ms-word-break: keep-all;
+    
 }
 em, address{
     font-style: normal;

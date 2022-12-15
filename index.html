@@ -37,6 +37,7 @@
   <title>KOGAS</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/kogas.css">
+
 </head>
 
 <body>
@@ -47,19 +48,21 @@
         <div class="header_topbox">
           <div class="inner">
             <ul class="mode_ch fl">
-              <li>
-                <a href="#"><img src="images/sun_default.png" alt="해"></a>
-              </li>
-              <li>
-                <a href="#"><img src="images/moon_default.png" alt="달"></a>
-              </li>
+              
+                <button class="mode_ch_btn">
+                  <li>
+                    <span><img src="images/sun.png" alt="해"></span>
+                  </li>
+                  <li>
+                    <span><img src="images/moon_default.png" alt="달"></span>
+                  </li>
+                </button>
+              
             </ul>
             <ul class="gnb fr">
-              <li>
-                <span><a href="#">어린이 KOGAS</a></span>
-              </li>
-              <li><a href="#">KOR</a></li>
               <li><a href="#">ENG</a></li>
+              <li><a href="#">KOR</a></li>
+              <li><span><a href="#">어린이 KOGAS</a></span></li>
             </ul>
           </div>
         </div>
@@ -166,53 +169,80 @@
         <div class="section1_sitemap">
           <div class="inner">
             <div class="slogan"><img src="images/visual_slogan_1.png" alt="슬로건1"></div>
-            <div class="search_box">
-              <input type="search" class="visual_search" name="search" id="search" placeholder="무엇을 도와드릴까요?">
-              <a href="#"><img src="images/zoom.png" alt="돋보기"></a>
+            <div class="search">
+              <div class="search_box">
+                <input type="search" class="visual_search" name="search" id="search" placeholder="무엇을 도와드릴까요?">
+                <a href="#"><img src="images/zoom.png" alt="돋보기"></a>
+              </div>
+              <ul class="search_hash">
+                <li><a href="#">조직도/인원</a></li>
+                <li><a href="#">#용어사전</a></li>
+                <li><a href="#">#규격표준</a></li>
+                <li><a href="#">#기술이전신청</a></li>
+                <li><a href="#">#전동기종합진단</a></li>
+              </ul>
             </div>
-            <ul class="search_hash">
-              <li><a href="#">조직도/인원</a></li>
-              <li><a href="#">#용어사전</a></li>
-              <li><a href="#">#규격표준</a></li>
-              <li><a href="#">#기술이전신청</a></li>
-              <li><a href="#">#전동기종합진단</a></li>
-            </ul>
           </div>
           <div class="quick_bar">
             <div class="quick_icon_wrap">
               <ul class="quick_icon">
-                <li><a href="#"><img src="images/quick_icon1.png" alt="채용안내"></a></li>
-                <li><a href="#"><img src="images/quick_icon2.png" alt="천연가스 도매요금"></a></li>
-                <li><a href="#"><img src="images/quick_icon3.png" alt="고객지원 제도"></a></li>
-                <li><a href="#"><img src="images/quick_icon4.png" alt="출입신청"></a></li>
-                <li><a href="#"><img src="images/quick_icon5.png" alt="온라인민원"></a></li>
-                <li><a href="#"><img src="images/quick_icon6.png" alt="공지사항"></a></li>
+                <li>
+                  <a href="#"><img src="images/quick_icon1.png" alt="채용안내"></a>
+                  <ul class="quick_span">
+                    <li><a href="#"><span>채용안내</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><img src="images/quick_icon2.png" alt="천연가스 도매요금"></a>
+                  <ul class="quick_span">
+                    <li><a href="#"><span>천연가스 도매요금</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><img src="images/quick_icon3.png" alt="고객지원 제도"></a>
+                  <ul class="quick_span">
+                    <li><a href="#"><span>고객지원 제도</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><img src="images/quick_icon4.png" alt="출입신청"></a>
+                  <ul class="quick_span">
+                    <li><a href="#"><span>출입신청</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><img src="images/quick_icon5.png" alt="온라인민원"></a>
+                  <ul class="quick_span">
+                    <li><a href="#"><span>온라인민원</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><img src="images/quick_icon6.png" alt="공지사항"></a>
+                  <ul class="quick_span">
+                    <li><a href="#"><span>공지사항</span></a></li>
+                  </ul>
+                </li>
               </ul>
             </div>
-            <div class="quick_span_wrap">
-              <ul class="quick_span">
-                <li><a href="#"><span>채용안내</span></a></li>
-                <li><a href="#"><span>천연가스 도매요금</span></a></li>
-                <li><a href="#"><span>고객지원 제도</span></a></li>
-                <li><a href="#"><span>출입신청</span></a></li>
-                <li><a href="#"><span>온라인민원</span></a></li>
-                <li><a href="#"><span>공지사항</span></a></li>
-              </ul>
-            </div>
+
           </div>
-          <div class="notice_rolling">
-            <ul class="notice_slide">
-              <li>
-                <a href="#"><img src="" alt=""></a>
-              </li>
-              <li><a href="#"></a></li>
-              <li><span></span></li>
-            </ul>
+         </div>
+         <div class="notice_rolling">
+          <div class="notice_wrap">
+            <div class="notice_slide">
+              <ul>
+                <li>
+                  <a href="#"><img src="images/notice_icon.png" alt="공지알림"></a>
+                </li>
+                <li><a href="#">‘22년 동절기 도시가스 절약 캐쉬백 안내문</a></li>
+                <li><span>2022-12-07</span></li>
+              </ul>
+            </div>
             <div class="notice_control">
               <ul class="notice_control_btn">
-                <li><a href="#"><img src="" alt=""></a></li>
-                <li><a href="#"><img src="" alt=""></a></li>
-                <li><a href="#"><img src="" alt=""></a></li>
+                <li><button type="submit"><img src="images/notice_control_down.png" alt="공지버튼아래"></button></li>
+                <li><button type="submit"><img src="images/notice_control_stop.png" alt="공지버튼멈춤"></button></li>
+                <li><button type="submit"><img src="images/notice_control_up.png" alt="공지버튼위"></button></li>
               </ul>
             </div>
           </div>
