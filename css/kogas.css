@@ -5,6 +5,7 @@
 #wrap {
     width: 100%;
     
+    
 }
 html{
     font-size: 16px;
@@ -25,7 +26,7 @@ html{
     max-width: 1420px;
     width: 100%;
     text-align: center;
-    height: inherit;
+    
 
 }
 
@@ -37,7 +38,7 @@ html{
     background-size: cover;
     height: 100vh;
     width: 100%;
-
+    
 }
 
 
@@ -579,6 +580,14 @@ main {
     font-weight: 600;
     width: 20%;
     position: absolute;
+    left: -15px;
+}
+.quick_icon li:last-child .quick_span span {
+    position: absolute;
+    left: -10px;
+}
+.quick_icon li:nth-child(5) .quick_span span{
+    position: absolute;
     left: -10px;
 }
 
@@ -607,13 +616,14 @@ main {
     width:40% ;
     float: left;
     line-height: 40px;
+    
 }
 .notice_wrap > .notice_slide  li{
     float: left;
     margin-left: 20px;
     height: 40px;
-   
     
+   
 }
 .notice_wrap > .notice_slide  li:nth-child(2):hover{
     text-decoration: underline;
@@ -623,8 +633,8 @@ main {
     top: 5px;
 }
 .notice_wrap > .notice_slide  li> a{
-    
     color: #fff;
+    
 }
 .notice_wrap > .notice_slide li span{
     color: rgba(255, 255, 255, 0.6);
@@ -657,17 +667,62 @@ main {
     cursor: pointer;
 }
 /*------------질문코드1 여기까지--------------*/
+/*------------section2_intro----------------*/
+main{
+    width: 100%;
+}
+.main_wrap{
+    width: 100%;
+    height: 100%;
+}
 .section2_intro {
+    width: 100%;
     background: yellow;
-    height: 900px;
+    height: 100vh;
+    background: url(../images/section2_intro_bg.png) no-repeat;
+    background-size: cover;
+    
+}
+.section2_intro .inner{
+    width: 1420px;
+    height: 100%;
+    
+  
+}
+
+.section2_headbox{
+    width: 1400px;
+    height: 65px;
+    background-color: red;
+    line-height: 65px;
+    margin: 20px auto;
+    display: inline-block;
+    
+    
+   
+}
+.section2_bottombox{
+    width: 1400px;
+    height: 656px;
+    background: #df20dd;
+    margin: 0 auto;
+}
+ul.section2_navi_btn{
+    width: 270px;
+    height: 240px;
+    background: #12d2df;
+    
 
 }
 
+/*------------section2_intro END----------------*/
+/*------------section3_ad----------------*/
 .section3_ad {
     background: yellow;
     height: 900px;
 }
-
+/*------------section3_ad END----------------*/
+/*------------section4_notice----------------*/
 .section4_notice {
     background: yellow;
     margin: 0 auto;
@@ -677,7 +732,8 @@ main {
 .section4_notice .inner {
     width: 1220px;
 }
-
+/*------------section4_notice END----------------*/
+/*------------section5_sns----------------*/
 .section5_sns {
     background: yellow;
     height: 650px;
@@ -686,7 +742,9 @@ main {
 .section5_sns .inner {
     width: 1220px;
 }
+/*------------section5_sns END----------------*/
 
+/*------------Footer----------------*/
 .site_rellink {
     background: red;
     height: 200px;
