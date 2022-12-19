@@ -35,6 +35,7 @@ html {
   background-size: cover;
   height: 100vh;
   width: 100%;
+  
 }
 
 .header_topbox {
@@ -48,9 +49,9 @@ html {
   max-width: 1200px;
 }
 
-.mode_ch_btn {
+.mode_ch {
   width: 48px;
-  height: 24px;
+  height: 22px;
   border-radius: 3rem;
   background: #fff;
   margin-top: 5px;
@@ -211,7 +212,7 @@ ul.gnb li:nth-child(2) a {
   height: 0;
   overflow: hidden;
   z-index: 2;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 .header_bottombox:hover .gnb_dep2 {
   height: auto;
@@ -321,6 +322,10 @@ main {
 .section1_sitemap {
   height: 850px;
   width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .section1_sitemap .inner {
@@ -331,7 +336,7 @@ main {
   height: 220px;
   position: absolute;
   left: 300px;
-  top: 280px;
+  top: 100px;
 }
 
 .search {
@@ -408,14 +413,14 @@ main {
 
 /*------------질문코드1---------------*/
 .quick_bar {
-  position: relative;
-  top: -300px;
+  position: absolute;
+  top: 550px;
   width: 1000px;
   background: rgb(255, 255, 255, 0.7);
   height: 150px;
   border: 1px solid;
   border-radius: 20px 20px 20px 20px;
-  margin: 0 auto;
+  
 }
 
 .quick_bar::before {
@@ -517,11 +522,12 @@ main {
 }
 
 .notice_rolling {
-  position: relative;
-  top: -89px;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: 60px;
   background: rgb(0, 0, 0, 0.6);
+  
 }
 .notice_wrap {
   display: flex;
