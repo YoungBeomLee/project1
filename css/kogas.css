@@ -27,7 +27,32 @@ html {
 .block {
   display: block;
 }
+/*------------layer popup-------------------------*/
+#layer {
+  display: none;
+  position: fixed;
+  width: 700px;
+  height: 700px;
+  background: #ccc;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+  font-size: 2.4em;
+  padding: 3em;
+  box-sizing: border-box;
+  line-height: 2;
+  top: 50px;
+  left: 150px;
+}
+#layer button {
+  cursor: pointer;
+  padding: 10px 20px;
+  right: 0;
+  top: 0;
+  background-color: #222;
+  color: #fff;
+}
 
+/*------------layer popup-------------------------*/
 /*--------------여기서 부터 레이아웃 시작----------*/
 
 .main_header {
@@ -1580,22 +1605,166 @@ main {
 /*------------section4_notice END----------------*/
 /*------------section5_sns----------------*/
 .section5_sns {
-  background: yellow;
+  background: #f3f3f3;
+  width: 100%;
   height: 650px;
+  min-height: 650px;
+  position: relative;
 }
 
 .section5_sns .inner {
-  width: 1220px;
+  max-width: 1220px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: relative;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #fff;
+  box-sizing: border-box;
+}
+.section5_sns_wrap {
+  margin-right: -20px;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 1221px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.section5_sns .inner .youtube {
+  width: 387px;
+  margin: 0px 20px 0 0;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+}
+.section5_sns .inner .youtube a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.section5_sns .inner .youtube a .contentbox::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/section5_youtube_logo.jpg);
+  position: absolute;
+  right: 15px;
+  top: 8px;
+}
+.section5_sns .inner .youtube a .imgbox {
+  width: 100%;
+  height: 155px;
+  overflow: hidden;
+  background-image: url("../images/section5_youtube_imgbox.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.section5_sns .contentbox {
+  position: relative;
+  padding: 35px 1rem 25px 1rem;
+  text-align: center;
+}
+.section5_sns .contentbox h3 {
+  margin-bottom: 0.75rem;
+  color: #333;
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.section5_sns .contentbox .subtxt {
+  max-height: 42px;
+  color: #666;
+  font-size: 1rem;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.section5_sns .inner .insta {
+  width: 387px;
+  margin: 0px 20px 0 0;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+}
+.section5_sns .inner .insta a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.section5_sns .inner .insta a .contentbox::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/section5_insta_logo.jpg);
+  position: absolute;
+  right: 15px;
+  top: 8px;
+}
+.section5_sns .inner .insta a .imgbox {
+  width: 100%;
+  height: 155px;
+  overflow: hidden;
+  background-image: url("../images/section5_insta_imgbox.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.section5_sns .inner .blog {
+  width: 387px;
+  margin: 0px 20px 0 0;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+}
+.section5_sns .inner .blog a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.section5_sns .inner .blog a .contentbox::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/section5_blog_logo.jpg);
+  position: absolute;
+  right: 15px;
+  top: 8px;
+}
+.section5_sns .inner .blog a .imgbox {
+  width: 100%;
+  height: 155px;
+  overflow: hidden;
+  background-image: url("../images/section5_blog_imgbox.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 /*------------section5_sns END----------------*/
 
 /*------------Footer----------------*/
 .site_rellink {
-  background: red;
-  height: 200px;
+  background-color: #ffffff;
+  padding: 40px 0 0;
+}
+.site_rellink .inner {
+  position: relative;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  max-width: 1220px;
+  color: #fff;
+  box-sizing: border-box;
+  background: #ccc ;
 }
 
-.coo_info {
+.coo_info_wrap {
   background: red;
 }
 
