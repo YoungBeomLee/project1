@@ -31,25 +31,34 @@ html {
 #layer {
   display: none;
   position: fixed;
-  width: 700px;
-  height: 700px;
-  background: #ccc;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(purple, skyblue, blue);
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
   z-index: 9999;
-  font-size: 2.4em;
+  font-weight: 500;
+  font-size: 1em;
   padding: 3em;
   box-sizing: border-box;
   line-height: 2;
   top: 50px;
   left: 150px;
+  border-radius: 15px;
+}
+#layer p {
+  word-break: keep-all;
+  color: #fff;
 }
 #layer button {
+  position: absolute;
   cursor: pointer;
   padding: 10px 20px;
-  right: 0;
-  top: 0;
+  top: -45px;
+  left: 0;
   background-color: #222;
   color: #fff;
+  border-radius: 5px;
+  margin: 10px 10px;
 }
 
 /*------------layer popup-------------------------*/
@@ -818,7 +827,7 @@ main {
   position: absolute;
   top: 170px;
   left: 0px;
-  text-align: c;
+  text-align: center;
 }
 .section2_imgbox img {
   width: 817px;
@@ -1680,9 +1689,6 @@ main {
   color: #666;
   font-size: 1rem;
   text-align: center;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
   line-height: 1.3;
   white-space: nowrap;
   overflow: hidden;
@@ -1749,6 +1755,7 @@ main {
 /*------------section5_sns END----------------*/
 
 /*------------Footer----------------*/
+
 .site_rellink {
   background-color: #ffffff;
   padding: 40px 0 0;
@@ -1761,7 +1768,6 @@ main {
   max-width: 1220px;
   color: #fff;
   box-sizing: border-box;
-  
 }
 .site_rellink .inner h3 {
   position: absolute;
@@ -1833,7 +1839,7 @@ main {
   display: block;
   box-sizing: border-box;
 }
-.slide_logobox ul{
+.slide_logobox ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -1843,15 +1849,189 @@ main {
 }
 
 .coo_info_wrap {
-  background: red;
+  height: auto;
+  position: relative;
+  margin: 0;
+  color: #ddd;
+  font-size: 0.8125rem;
+  font-weight: 300;
+  line-height: 1.5;
+  background: #424242;
 }
 
 .coo_info1 {
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #5c5c5c;
+  padding-right: 25px;
+  padding-left: 25px;
+  box-sizing: border-box;
   height: 100px;
+}
+.coo_info1 > .inner {
+  width: 1000px;
+}
+.coo_info1 .inner .coo_info1_wrap {
+  margin: 0 auto;
+  width: auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer_nav {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.footer_nav li {
+  position: relative;
+}
+.footer_nav li a {
+  padding: 0 18px;
+  font-size: 1.25rem;
+  color: #fff;
+  line-height: 40px;
+}
+.footer_nav li a span {
+  display: inline-block;
+}
+.footer_sns_logo {
+  display: flex;
+  flex-direction: row;
+  padding-left: 25px;
+}
+.footer_sns_logo li {
+  display: table;
+  margin: 0 5px;
+}
+.footer_sns_logo li a {
+  width: 2.5rem;
+}
+.footer_sns_logo li a img {
+  width: 2rem;
+  height: auto;
+  position: relative;
+  top: 5px;
+}
+
+.family_site {
+  position: relative;
+  padding-left: 35px;
+  width: 200px;
+}
+
+.family_site .family_wrap {
+  position: absolute;
+  padding-left: 10px;
+  width: 100%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 0.9375rem;
+  color: #fff;
+  border-radius: 5px;
+  background: #666666;
+  text-align: left;
+  cursor: pointer;
+}
+.family_site .family_wrap::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -7px;
+  width: 7px;
+  height: 12px;
+  background: url("../images/footer_family_wrap_arrow.png") no-repeat 50% 50%;
+  background-size: 8px auto;
+  transform: rotate(-90deg);
+  transition: all 0.2s ease;
+}
+.family_collection {
+  display: none;
+  position: absolute;
+  top: auto;
+  left: -55px;
+  right: 0;
+  bottom: 100%;
+  width: 425px;
+  margin: 0 auto;
+}
+.family_collection ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1px;
+}
+.family_collection ul li {
+  clear: both;
+  float: left;
+  border-right: none;
+  flex: 1 0 50%;
+  margin-bottom: -1px;
+  width: 50%;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: table;
+}
+.family_collection ul > li > a {
+  padding: 5px;
+  height: 35px;
+  line-height: 1.2;
+  font-size: 0.875rem;
+  color: #888888;
+  text-align: center;
+  box-sizing: border-box;
+  vertical-align: middle;
+  display: table-cell;
 }
 
 .coo_info2 {
-  height: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  border-bottom: 1px solid #5c5c5c;
+  box-sizing: border-box;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.coo_info2 .inner {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+.coo_info2 .inner ul {
+  text-align: center;
+  position: relative;
+}
+.coo_info2 .inner ul li {
+  position: relative;
+  display: inline-block;
+}
+.coo_info2 .inner ul li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  margin-top: -5px;
+  width: 1px;
+  height: 11px;
+  background: #888;
+}
+.coo_info2 .inner ul li a {
+  padding: 3px 10px;
+  color: #ddd;
+}
+.coo_info2 .inner ul li:first-child::before {
+  display: none;
+}
+.coo_info2 .inner ul li:first-child a {
+  color: #efbc8a;
 }
 
 .coo_info3 {
