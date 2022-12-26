@@ -1756,6 +1756,12 @@ main {
 
 /*------------Footer----------------*/
 
+.footer_wrap {
+  font-size: 0.8125rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #ddd;
+}
 .site_rellink {
   background-color: #ffffff;
   padding: 40px 0 0;
@@ -1976,6 +1982,10 @@ main {
   box-sizing: border-box;
   display: table;
 }
+.family_collection ul li:hover a{
+  color: #fff;
+  background: #888;
+}
 .family_collection ul > li > a {
   padding: 5px;
   height: 35px;
@@ -2035,7 +2045,93 @@ main {
 }
 
 .coo_info3 {
-  height: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 25px;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+.coo_info3 .inner {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+}
+.validator {
+  position: absolute;
+  left: 0;
+  font-size: 2em;
+}
+.validator li a {
+  color: blue;
+}
+.coo_info3_left {
+  margin-bottom: 18px;
+  padding-right: 35px;
+  min-width: 185px;
+  text-align: right;
+}
+.coo_info3_left span {
+  display: block;
+  margin-top: -7px;
+}
+.coo_info3_left span img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: none;
+}
+.coo_info3_middle {
+  margin-bottom: 8px;
+  width: 830px;
+  padding-right: 20px;
+  color: #ccc;
+  box-sizing: border-box;
+}
+.coo_info3_middle ul.adress {
+  margin: 0 -7px;
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: row;
+}
+.coo_info3_middle ul.adress li {
+  position: relative;
+  padding: 0 7px;
+  box-sizing: border-box;
+}
+.coo_info3_middle ul.adress li span {
+  display: inline-block;
+}
+.coo_info3_middle ul.adress li + li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  margin-top: -5px;
+  width: 1px;
+  height: 11px;
+  background: #888;
+}
+.copyright {
+  text-transform: uppercase;
+  text-align: left;
+}
+.copyright span {
+  display: inline-block;
+}
+.coo_info3_right {
+  width: 2.875rem;
+}
+.coo_info3_right a {
+  display: block;
+  width: 3.75rem;
+}
+.coo_info3_right a img {
+  vertical-align: middle;
+  border: none;
+  max-width: 100%;
 }
 
 /*quick_search바 position:fixed*/
