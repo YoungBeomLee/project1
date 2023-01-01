@@ -21,7 +21,8 @@ html{
     overflow-x: hidden;
     overflow-y: scroll;/*가시적인 부분에서 불편함을 해소하기위해 스크롤은 만들어둔다.*/
 }
-body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; width:100%;
+    overflow-x:hidden;}
 
 body, input, textarea, select, button, table{
     font-family: 'Noto Sans KR', 'Nanum Gothic', Nanum Gothic, '나눔고딕', '맑은 고딕', 'Malgun Gothic', Dotum, '돋움', Gulim, '굴림', sans-serif;
