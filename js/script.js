@@ -45,7 +45,7 @@ $(function () {
       list.css("top", 0);
     }
     num++; //요기의 num 0
-    list.stop().animate({ top: -li_height * num }, 1000); //요기의num
+    list.stop().animate({ top: -li_height * num },500); //요기의num
     return false;
   });
   $(".btn_down").click(function () {
@@ -54,7 +54,7 @@ $(function () {
       list.css("top", -li_height * num);
     }
     num--;
-    list.stop().animate({ top: -li_height * num }, 1000);
+    list.stop().animate({ top: -li_height * num },500);
     return false;
   });
 });

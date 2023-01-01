@@ -578,9 +578,10 @@ main {
   float: left;
   line-height: 40px;
   overflow: hidden;
+  position: relative;
 }
 .notice_wrap > .notice_slide ul.notice_content {
-  position: relative;
+  position: absolute;
   left: 30px;
   top: 0;
   float: left;
