@@ -15,7 +15,7 @@ $(function () {
     li_height = list.find("li").eq(0).height(),
     copyObj = list.find("li").clone(),
     ctrl = $(".btn_ctrl");
-  list.append(copyObj);
+   list.append(copyObj);
 
   const timer = setInterval(autoplay, 2000); //const 변수선언은 적용범위가 좁다.
 
@@ -33,7 +33,7 @@ $(function () {
   function autoplay() {
     if (num == total) {
       num = 0;
-      list.css("top", 0);
+      list.css("top", "0");
     }
     num++;
     list.stop().animate({ top: -li_height * num }, 1000);
