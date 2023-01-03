@@ -1,11 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  document
-    .querySelector("#layer button")
-    .addEventListener("click", function () {
-      document.querySelector("#layer").style.display = "none";
-    });
-});
-
 $(function () {
   //section2 slide
 
@@ -26,6 +18,8 @@ $(function () {
     $(this).find("strong").addClass("on");
     visual.removeClass("on");
     visual.addClass("on");
+    button.find("div").removeClass("on")
+    $(this).find("div").addClass("on")
     
     
    
