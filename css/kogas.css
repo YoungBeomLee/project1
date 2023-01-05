@@ -1892,7 +1892,7 @@ ul.section2_slide li:nth-child(5) {
   float: left;
   
 }
-.site_rellink .inner .slide_btn ul li.stop1 {
+.site_rellink .inner .slide_btn ul li.stop.stop1 {
   width: 3px;
   height: 11px;
   border: 3px solid #4f4f4f;
@@ -1930,7 +1930,7 @@ ul.section2_slide li:nth-child(5) {
   right: 0;
 }
 .slide_logobox {
-  width: 100%;
+  width: 1080px;
   padding: 20px 0 30px 0;
   position: relative;
   display: block;
@@ -1939,9 +1939,9 @@ ul.section2_slide li:nth-child(5) {
 }
 .slide_logobox ul {
   width: 100%;
- display: flex;
+  display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .slide_logobox ul li {
   width: 200px;
