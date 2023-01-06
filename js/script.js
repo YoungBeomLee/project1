@@ -15,7 +15,7 @@ $(function () {
 		copyObj = list.find("li").clone(),
 		ctrl = $(".btn_ctrl");
 	list.append(copyObj);
-    auto()
+    auto();
 	function auto() {
 		timer = setInterval(autoplay, 2000);
 	}

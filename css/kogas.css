@@ -1041,7 +1041,8 @@ ul.section2_slide li:nth-child(5) {
 }
 .section3_navi_btn .section3_navi_btn_box li div.on {
   border-left-color: #1d60b2;
-  border-right-color: #1d60b2;
+  border-right-color:#1d60b2;
+  
 }
 .section3_navi_btn ul.section3_navi_btn_box li .triangle_before {
   content: "";

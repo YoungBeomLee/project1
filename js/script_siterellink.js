@@ -12,7 +12,7 @@ $(function () {
     total = list.find("li").length, //li 의 갯수 (슬라이드한개)
     li_width = list.find("li").eq(0).width(),
     copyObj = list.find("li").clone(),
-    ctrl = $(".slide_btn ul li.stop");
+    ctrl = $(".stop");
   list.append(copyObj);
 
    //const 변수선언은 적용범위가 좁다.
@@ -30,7 +30,8 @@ $(function () {
     } else {
       ctrl.removeClass("on");
       $(this).addClass("stop1");
-      auto();
+      clearInterval(timer);
+      
       return false;
     }
   });
@@ -41,7 +42,7 @@ $(function () {
       list.css("margin-left", 0);
     }
     num++;
-    list.stop().animate({ "margin-left": -li_width * num }, 1000);
+    list.stop().animate({ "margin-left": -li_width * num }, 2000);
   }
 
   $(".next").click(function () {

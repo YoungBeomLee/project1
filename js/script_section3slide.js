@@ -24,6 +24,7 @@ $(function () {
       $(this).find("div").addClass("on");
       
       
+      
      
       move();
       //선택된것만 적용하기
@@ -46,7 +47,7 @@ $(function () {
       id = setInterval(function () {
         let next = current + 1;
         if (next == visual.length) {
-          //인덱스번호가 3이면 next를 0으로 해라.
+          //인덱스번호가 5이면 next를 0으로 해라.
           next = 0;
         }
         button.eq(next).trigger("click");
