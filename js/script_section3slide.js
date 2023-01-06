@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function () {
+	
+});
+
 $(function () {
     //section3 slide
   

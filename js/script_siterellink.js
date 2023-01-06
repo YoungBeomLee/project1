@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function () {
+	
+	});
+
 $(function () {
   //변수
   let timer;

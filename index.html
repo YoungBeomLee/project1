@@ -2,7 +2,7 @@
 <html lang="ko">
 
 <head>
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) 항상 최상단에있어야함-->
   <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-J5MZHTSRLM"></script>
@@ -49,10 +49,7 @@
   <meta name="msapplication-TileImage" content="ms-icon-144x144.png" >
   <meta name="theme-color" content="#ffffff" >
   <title>KOGAS</title>
-  <link rel="stylesheet" href="css/font.css" >
-  <link rel="stylesheet" href="css/reset.css" >
-  <link rel="stylesheet" href="css/kogas.css" >
-  <link rel="stylesheet" href="css/media.css" >
+  <link rel="stylesheet" href="css/layout.css">
   <!-- js -->
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="./js/script.js"></script>
@@ -67,13 +64,14 @@
     <p> 이 사이트는 학습용으로 제작하였으며 한국가스공사와 무관합니다. 구직용 포트폴리오로 상업적 목적이 없음을 알립니다. </p>
     <button>닫기</button>
   </div>
-  <ul class="skipmenu_wrap">skip_menu
-    <li><a href="#wrap" class="skip_menu">Section1</a></li>
-    <li><a href="#section2_intro" class="skip_menu">Section2</a></li>
-    <li><a href="#section3_ad" class="skip_menu">Section3</a></li>
-    <li><a href="#section4_notice" class="skip_menu">Section4</a></li>
-    <li><a href="#section5_sns" class="skip_menu">Section5</a></li>
-    <li><a href="#footer_wrap" class="skip_menu">Footer</a></li>
+  <ul class="skipmenu_wrap">
+    <li><span>skip_menu</span></li>
+    <li><a class="skip_menu" href="#wrap" >Section1</a></li>
+    <li><a class="skip_menu" href="#section2_intro" >Section2</a></li>
+    <li><a class="skip_menu" href="#section3_ad" >Section3</a></li>
+    <li><a class="skip_menu" href="#section4_notice" >Section4</a></li>
+    <li><a class="skip_menu" href="#section5_sns" >Section5</a></li>
+    <li><a class="skip_menu" href="#footer_wrap" >Footer</a></li>
   </ul>
   <div id="wrap">
     <header>
@@ -100,7 +98,7 @@
               </li>
             </ul>
             <div class="img_headlogo">
-              <div class="coo_logo"></div>
+              <div class="coo_logo"><a href="index.html" class="coo_logo"></a></div>
             </div>
             <div class="nav fl">
               <ul class="nav_wrap">
