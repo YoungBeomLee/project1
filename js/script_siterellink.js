@@ -16,10 +16,7 @@ $(function () {
   list.append(copyObj);
 
    //const 변수선언은 적용범위가 좁다.
-  auto();
-  function auto() {
-    timer = setInterval(autoplay, 2000);
-  }
+   
   ctrl.click(function () {
     
     if (ctrl.hasClass("stop1")) {
@@ -30,19 +27,21 @@ $(function () {
     } else {
       ctrl.removeClass("on");
       $(this).addClass("stop1");
-      clearInterval(timer);
+      autoplay();
       
       return false;
     }
   });
-
+  autoplay();
   function autoplay() {
+    timer = setInterval(function(){
     if (num == total-3) {
       num = 0;
       list.css("margin-left", 0);
     }
     num++;
-    list.stop().animate({ "margin-left": -li_width * num }, 2000);
+    list.stop().animate({ "margin-left": -li_width * num }, 1000);
+  },2000)
   }
 
   $(".next").click(function () {
@@ -65,11 +64,12 @@ $(function () {
   });
   clearAuto();
 	function clearAuto() {
-		$(".prev,.stop,.next").mouseenter(function () {
+		$(".prev,.next").mouseenter(function () {
 			clearInterval(timer);
 		});
-		$(".prev,.stop,.next").mouseleave(function () {
-			auto();
+		$(".prev,.next").mouseleave(function () {
+			if(ctrl.hasClass("on")) return;
+      autoplay();
 		});
 	}
 });

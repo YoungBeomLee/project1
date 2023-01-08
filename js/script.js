@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 $(function () {
 	//변수
-    let timer;
+    
 	let list = $(".notice_content"),
 		num = 0; //슬라이드기능 구현시 번호를 저장할 변수를 먼저만들자
 
@@ -15,10 +15,8 @@ $(function () {
 		copyObj = list.find("li").clone(),
 		ctrl = $(".btn_ctrl");
 	list.append(copyObj);
-    auto();
-	function auto() {
-		timer = setInterval(autoplay, 2000);
-	}
+    var timer;
+	
 
 	ctrl.click(function () {
 		if (ctrl.find("img").attr("src") === "images/notice_control_stop.png") {
@@ -26,17 +24,30 @@ $(function () {
 			clearInterval(timer);
 		} else {
 			ctrl.find("img").attr("src", "images/notice_control_stop.png");
-			auto();
+			autoplay();
 		}
 	});
-
+	
+	clearAuto();
+	function clearAuto() {
+		$(".btn_down,.btn_up").mouseenter(function () {
+			clearInterval(timer);
+		});
+		$(".btn_down,.btn_up").mouseleave(function () {
+			if(ctrl.find("img").attr("src") === "images/notice_control_play.png") return;
+			autoplay();
+		});
+	}
+	autoplay();
 	function autoplay() {
+		timer =  setInterval(function(){
 		if (num == total) {
 			num = 0;
 			list.css("top", "0");
 		}
 		num++;
 		list.stop().animate({ top: -li_height * num }, 1000);
+	},2000)
 	}
 
 	$(".btn_up").click(function () {
@@ -49,8 +60,8 @@ $(function () {
 		return false;
 	});
 	$(".btn_down").click(function () {
-		if (num == 0) {
-			num = total; //3
+		if (num == 1) {
+			num = total+1; //3
 			list.css("top", -li_height * num);
 		}
 		num--;
@@ -58,13 +69,5 @@ $(function () {
 		return false;
 	});
 
-	clearAuto();
-	function clearAuto() {
-		$(".btn_up,.btn_ctrl,.btn_down").mouseenter(function () {
-			clearInterval(timer);
-		});
-		$(".btn_up,.btn_ctrl,.btn_down").mouseleave(function () {
-			auto();
-		});
-	}
+	
 });
