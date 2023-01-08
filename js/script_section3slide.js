@@ -20,8 +20,10 @@ $(function () {
       $(this).addClass("on");
       button.find("strong").removeClass("on");
       $(this).find("strong").addClass("on");
-      button.find("div").removeClass("on");
-      $(this).find("div").addClass("on");
+      button.find(".triangle_before").removeClass("on");
+      $(this).find(".triangle_before").addClass("on");
+      button.find(".triangle_after").removeClass("on");
+      $(this).find(".triangle_after").addClass("on");
       
       
       

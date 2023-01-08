@@ -805,11 +805,8 @@ main {
   border-bottom-color: #4ea815;
 }
 
-.section2_navi_btn .section2_navi_btn_box li:hover .triangle_before {
+.section2_navi_btn .section2_navi_btn_box li:hover div {
   border-bottom-color: #4ea815;
-}
-
-.section2_navi_btn .section2_navi_btn_box li:hover .triangle_after {
   border-top-color: #4ea815;
 }
 
@@ -1039,10 +1036,11 @@ ul.section2_slide li:nth-child(5) {
 .section3_navi_btn .section3_navi_btn_box li:hover .triangle_after {
   border-right-color: #1d60b2;
 }
-.section3_navi_btn .section3_navi_btn_box li div.on {
+.section3_navi_btn .section3_navi_btn_box li .triangle_before.on {
   border-left-color: #1d60b2;
-  border-right-color:#1d60b2;
-  
+}
+.section3_navi_btn .section3_navi_btn_box li .triangle_after.on {
+  border-right-color: #1d60b2;
 }
 .section3_navi_btn ul.section3_navi_btn_box li .triangle_before {
   content: "";
