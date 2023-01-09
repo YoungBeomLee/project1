@@ -69,7 +69,7 @@ git congig --list
 
 
 ## General Information
-> 기획서 보기 [_here_](https://github.com/YoungBeomLee/project1/blob/main/proposal/%ED%95%9C%EA%B5%AD%EA%B0%80%EC%8A%A4%EA%B3%B5%EC%82%AC%20%EB%A6%AC%EB%89%B4%EC%96%BC%20%EA%B8%B0%ED%9A%8D%EC%84%9C.pdf)
+> 기획서 보기 [_here!_](https://github.com/YoungBeomLee/project1/blob/main/proposal/%ED%95%9C%EA%B5%AD%EA%B0%80%EC%8A%A4%EA%B3%B5%EC%82%AC%20%EB%A6%AC%EB%89%B4%EC%96%BC%20%EA%B8%B0%ED%9A%8D%EC%84%9C.pdf)
 - 기획서의 목차작성
 - 기획서의 내용을 간락히 요약 정리
 
@@ -103,7 +103,7 @@ List the ready features here:
 
 
 ## Screenshots
-<!-- ![Example screenshot](./img/screenshot.png) -->
+![Example screenshot](./images/youngbeomlee.github.io_project1.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
