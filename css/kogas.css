@@ -329,7 +329,7 @@ ul.gnb li:nth-child(2) a {
 }
 
 .dep2_ulwrap {
-  width: 908.09px;
+  width: 908px;
   display: flex;
   position: relative;
   left: 190px;
@@ -724,9 +724,10 @@ main {
   position: relative;
 }
 #section2_intro .inner {
-  width: 1420px;
+  max-width: 1420px;
   height: 100%;
   position: relative;
+  
 }
 
 .section2_headbox {

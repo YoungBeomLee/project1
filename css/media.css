@@ -2,13 +2,50 @@
 
 
 @media screen and (max-width:1280px){
-    
+    #wrap {
+        width: 1280px;
+      }
     .inner{
         zoom: 90%;
     }
     .notice_rolling{
         zoom: 90%;
     }
+    .notice_control .notice_control_btn {
+        display: flex;
+        
+      }
+    .notice_control .notice_control_btn li {
+       
+        opacity: 0.6;
+        margin-left: 2px;
+      }
+      .section2_navi_btn .section2_navi_btn_box {
+        width: 720px;
+        height: 200px;
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        left: 70px;
+        top: -20px;
+      }
+      .dep2_wrap .dep2_ulwrap ul:first-child {
+        position: relative;
+        left: 30px;
+      }
+      .dep2_wrap .dep2_ulwrap ul:last-child {
+        position: relative;
+        left: -30px;
+      }
+      .dep2_servicegnb_inner {
+        width: 100%;
+        
+      }
+      .dep2_servicegnb h4 {
+        margin-left: 150px;
+    }
+
 }
 @media screen and (max-width:1199px){
    
