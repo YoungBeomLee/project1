@@ -5,6 +5,6 @@ $(window).mousemove(function (e) {
       y: e.clientY,
     };
   
-    cursor.css({"top":pointer.y,"left":pointer.x,"margin-left":-pointer.x/2,"margin-top":-pointer.y/2})
+    cursor.css({top:pointer.y,left:pointer.x,"margin-left":-pointer.x/2,"margin-top":-pointer.y/2})
 
   });
