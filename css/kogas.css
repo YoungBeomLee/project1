@@ -27,6 +27,8 @@
 } /* 대체 텍스트가 아니 접근성을 위한 숨김 텍스트를 제공할 때 */
 #wrap {
   width: 100%;
+  cursor: none;
+  
 }
 html {
   font-size: 16px;
@@ -727,7 +729,6 @@ main {
   max-width: 1420px;
   height: 100%;
   position: relative;
-  
 }
 
 .section2_headbox {
@@ -2340,3 +2341,20 @@ ul.section2_slide li:nth-child(5) {
   cursor: pointer;
 }
 /*quick_search바 END*/
+
+/*cursor*/
+.cursor {
+  position: absolute;
+  z-index: 9999;
+  user-select: none;
+  pointer-events: none; /*기존포인터 기능막기*/
+  
+}
+.cursor_image{
+  width:3em;
+  height:3em;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+ 
+}
