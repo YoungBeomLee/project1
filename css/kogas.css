@@ -2347,7 +2347,9 @@ ul.section2_slide li:nth-child(5) {
   position: absolute;
   z-index: 9999;
   user-select: none;
-  pointer-events: none; /*기존포인터 기능막기*/
+  pointer-events: none;
+  width:3em;
+  height:3em; /*기존포인터 기능막기*/
   
 }
 .cursor_image{
