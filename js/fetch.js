@@ -1,28 +1,27 @@
-//getUltraSrtNcst(초단기실황) getVilageFcst(단기예보조회)
 const castBox = document.querySelector("#container");
 let statusText, rainIcon, locText;
 rainIcon = ['<i class="bi bi-brightness-high-fill"></i>', '<i class="bi bi-cloud-drizzle-fill"></i>', '<i class="bi bi-cloud-fog2-fill"></i>', '<i class="bi bi-lightning-fill"></i>', '<i class="bi bi-snow3"></i>'];
-let url = "http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/"; /*URL*/
-let params={
-   type: ["getUltraSrtNcst", "getVilageFcst"],//초단기실황 , 단기예보
-   key:"eRJMein3NmELUx%2FLuPHfoRdlohmVIL3MZGIGrRpkWdIm%2FnvpP%2FvML0v%2FvRtEDnylTAkvdh4qD7Iw19Op%2Fqmz8w%3D%3D",
-   pageNo:"1",
-   numOfRows:"1000",
-   dataType:"JSON",
-   base_date: now,
-   base_time:"0600",
-   nx:"73",
-   ny:"134",
-} 
+let url = "http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/";
+let params = {
+	type: ["getUltraSrtNcst", "getVilageFcst"], //(초단기실황)(단기예보)
+	key: "eRJMein3NmELUx%2FLuPHfoRdlohmVIL3MZGIGrRpkWdIm%2FnvpP%2FvML0v%2FvRtEDnylTAkvdh4qD7Iw19Op%2Fqmz8w%3D%3D",
+	pageNo: "1",
+	numOfRows: "1000",
+	dataType: "JSON",
+	base_date: now,
+	base_time: "0600",
+	nx: "73",
+	ny: "134",
+};
 
-url = `${url}${params.type[0]}?serviceKey=${params.key}&pageNo=${params.pageNo}&numOfRows=${params.numOfRows}&dataType=${params.dataType}&base_date=${params.base_date}&base_time=${params.base_time}&nx=${params.nx}&ny=${params.ny}`; //https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst
-
+url = `${url}${params.type[0]}?serviceKey=${params.key}&pageNo=${params.pageNo}&numOfRows=${params.numOfRows}&dataType=${params.dataType}&base_date=${params.base_date}&base_time=${params.base_time}&nx=${params.nx}&ny=${params.ny}`;//https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst
 
 async function getPosts() {
 	const res = await fetch(url);
 	const data = await res.json();
 	return data;
 }
+
 async function setPosts() {
 	const posts = await getPosts();
 	const datas = posts.response.body.items.item;
@@ -60,7 +59,7 @@ async function setPosts() {
       let point=[this.nx, this.ny];
       console.log(point);
       if(point[0]==73 && point[1]==134 ){
-        locText="경기도"
+        locText="강원도"
       }
     }
 	};
@@ -69,7 +68,7 @@ async function setPosts() {
 
 	tr.innerHTML = `
     <td>오늘날짜: ${cast.baseDate}</td>
-    <td>지역:${locText}<br></td>
+    <td>지역:${locText}</td>
     <td>강수형태:${statusText}${rainIcon}</td>
     <td>기온:${cast.temperature}도</td>
     <td>바람:${cast.wind}/ms</td>
