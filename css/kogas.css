@@ -87,6 +87,22 @@ html {
 }
 
 /*------------layer popup-------------------------*/
+/*------------wheather api-------------------------*/
+#container{
+  position: relative;
+  
+}
+#container a{
+  position: absolute;
+}
+#container table{
+  margin: 0 auto;
+  width: 700px;
+}
+#container table td{
+  margin: 0 30px;
+}
+/*------------wheather api-------------------------*/
 /*------------skip_menu-------------------------*/
 .skip_menu a:focus {
   outline: 1px dashed red;
