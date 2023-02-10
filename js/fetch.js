@@ -4,7 +4,7 @@ rainIcon = ['<i class="bi bi-brightness-high-fill"></i>', '<i class="bi bi-cloud
 let url = "http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/";
 let params = {
 	type: ["getUltraSrtNcst", "getVilageFcst"], //(초단기실황)(단기예보)
-	key: "eRJMein3NmELUx%2FLuPHfoRdlohmVIL3MZGIGrRpkWdIm%2FnvpP%2FvML0v%2FvRtEDnylTAkvdh4qD7Iw19Op%2Fqmz8w%3D%3D",
+	key: "eZ4FQ9%2BhW7srA%2B7TZcCnNMmHX%2Fc6CMSsOK6MN%2Bz%2FjhSx41RG7G5Z93haX6BF%2Bxs%2F4HhF9xW6E0CDLbkehmAKLg%3D%3D",
 	pageNo: "1",
 	numOfRows: "1000",
 	dataType: "JSON",
