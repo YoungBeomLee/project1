@@ -1,7 +1,7 @@
 const castBox = document.querySelector("#container");
 let statusText, rainIcon, locText;
 rainIcon = ['<i class="bi bi-brightness-high-fill"></i>', '<i class="bi bi-cloud-drizzle-fill"></i>', '<i class="bi bi-cloud-fog2-fill"></i>', '<i class="bi bi-lightning-fill"></i>', '<i class="bi bi-snow3"></i>'];
-let urls = "http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/";
+let url = "https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/";
 let params = {
 	type: ["getUltraSrtNcst", "getVilageFcst"], //(초단기실황)(단기예보)
 	key: "eZ4FQ9%2BhW7srA%2B7TZcCnNMmHX%2Fc6CMSsOK6MN%2Bz%2FjhSx41RG7G5Z93haX6BF%2Bxs%2F4HhF9xW6E0CDLbkehmAKLg%3D%3D",
@@ -14,10 +14,10 @@ let params = {
 	ny: "134",
 };
 
-urls = `${urls}${params.type[0]}?serviceKey=${params.key}&pageNo=${params.pageNo}&numOfRows=${params.numOfRows}&dataType=${params.dataType}&base_date=${params.base_date}&base_time=${params.base_time}&nx=${params.nx}&ny=${params.ny}`;//https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst
+url = `${url}${params.type[0]}?serviceKey=${params.key}&pageNo=${params.pageNo}&numOfRows=${params.numOfRows}&dataType=${params.dataType}&base_date=${params.base_date}&base_time=${params.base_time}&nx=${params.nx}&ny=${params.ny}`;//https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst
 
 async function getPosts() {
-	const res = await fetch(urls);
+	const res = await fetch(url);
 	const data = await res.json();
 	return data;
 }
